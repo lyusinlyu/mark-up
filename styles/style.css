@@ -8,6 +8,9 @@ body {
 	max-width: 900px !important;
 	padding: 30px 0;
 }
+.section-grey {
+	background: #F9F9F9;
+}
 .heading {
 	text-transform: uppercase;
 	font-weight: 700;
@@ -105,9 +108,7 @@ section.info {
 
 /*Section info2*/
 
-section.info2 {
-	background: #F9F9F9;
-}
+
 .pills_cont {
 	background: #fff;
     padding: 0;
@@ -153,3 +154,49 @@ section.services {
 	font-size: 14px;
 	color: #999999;
 }
+
+/*section portfolio*/
+
+
+.info3-item {
+	text-align: center;
+}
+.info3-item p.numb-results {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+.info3-item p.small {
+	color: #777;
+	font-weight: 600;
+}
+
+/*our team*/
+
+.member-card {
+	margin: 20px 0;
+	box-shadow: 0px 1px 3px #ccc;
+	border-radius: 0px;
+}
+.member-card .card-img-top {
+	border-radius: 0;
+}
+.member-card .card-title {
+	color: #2196F3;
+    font-size: 1.2rem;
+}
+.member-card p {
+	color: #333;
+	font-size: 0.8rem;
+}
+.social {
+	display: flex;
+}
+.social i {
+	color: #777;
+	margin-right: 10px;
+	font-size: 0.8rem;
+}
+.social i:hover {
+	color: #2196F3;
+} 
