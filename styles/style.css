@@ -1,8 +1,11 @@
 body {
 	background: #fff;
 }
+
+/*navbar styles*/
+
 .navbar-wrapper {
-	/*box-shadow: 0px 0px 5px #000;*/
+	
 }
 .header .bg-light {
 	background: #fff !important;
@@ -36,6 +39,32 @@ body {
 .navbar-link:active:before {
 	display: block;
 }
+
+/*carousel styles*/
+
 .carousel-img {
 	width: 100%;
+}
+.carousel-caption {
+	top: 50%;
+	transform: translateY(-50%);
+}
+.carousel-caption h1 {
+	text-transform: capitalize;
+    font-size: 3.5rem;
+	font-weight: 700;
+}
+.carousel-caption p {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+	margin: 30px 0;
+}
+.carousel-caption button {
+	text-transform: uppercase;
+    padding: 6px 20px;
+    font-size: 16px;
+    background: #eee;
+    border: none;
+    box-shadow: 0px 2px 2px #333;
+    cursor: pointer;
 }
