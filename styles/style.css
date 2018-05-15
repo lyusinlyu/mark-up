@@ -184,13 +184,13 @@ section.services {
 }
 .portfolio-tab-cont img {
 	margin-bottom: 15px;
-	max-width: 280px;
 }
 .portfolio-tab-cont .row {
 	margin: 0 !important;
 }
 .portfolio-nav-pills {
 	justify-content: flex-end;
+	padding-right: 15px;
 }
 .portfolio-nav-pills .nav-link {
 	background: #eee;
