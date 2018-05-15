@@ -77,10 +77,10 @@ body {
 .carousel-img {
 	width: 100%;
 }
-.carousel-caption {
+/*.carousel-caption {
 	top: 50%;
 	transform: translateY(-50%);
-}
+}*/
 .carousel-caption h1 {
 	text-transform: capitalize;
     font-size: 3.5rem;
@@ -449,27 +449,9 @@ footer p span {
 	.search-btn {
 		float: right;
 	}
-	.carousel-caption {
-		top: 40%;
-	}
+	
 	.portfolio-gallery {
 		text-align: center;
-	}
-}
-
-@media only screen and (max-width: 950px) {
-	.portfolio-tab-cont img {
-		max-width: 50%;
-	}
-}
-
-@media only screen and (max-width: 840px) {
-	.carousel-caption {
-		top: 30%;
-	
-	}
-	.carousel-caption h1 {
-		font-size: 2.5rem;
 	}
 }
 @media only screen and (max-width: 768px) {
@@ -506,33 +488,24 @@ footer p span {
 	.portfolio-nav-pills .nav-link {
 		margin: 2px;
 	}
-	
-}
-
-@media only screen and (max-width: 672px) {
-	#myCarousel1 .carousel-caption {
-		top: 30%;
-		left: 0;
-		right: 0;
-		text-align: center;
-	}
-	.carousel-caption {
-		top: 40%;
-		transform: translateY(-80%);
-	}
 	.carousel-caption h1 {
-		font-size: 1.3rem;
+		font-size: 1.8rem;
 	}
-	
 	.carousel-caption p {
-	    margin: 10px 0;
-	    font-size: 0.9rem;
+		margin: 5px 0;
 	}
 	.carousel-caption button {
 	    padding: 3px 5px;
     	font-size: 14px;
 	}
-
+	.about-section-gallery .row {
+		display: flex;
+		justify-content: center;
+	}
+	.info2 .pills_cont {
+		margin-bottom: 20px;
+	}
+	
 }
 
 @media only screen and (max-width: 576px) {
@@ -542,21 +515,10 @@ footer p span {
 	section.services .heading {
 		text-align: left;
 	}
-}
-
-@media only screen and (max-width: 450px) {
-	#myCarousel1 .carousel-caption {
-		top: 20%;
-		left: 0;
-		right: 0;
-		text-align: center;
-	}
 	.carousel-caption h1 {
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 	}
 	.carousel-caption p {
-	    margin: 10px 0;
-	    font-size: 0.7rem;
+		display: none;
 	}
 }
-
