@@ -272,6 +272,52 @@ section.services {
     height: 10px;
 }
 
+/*info4 section*/
+
+.info4 img {
+	max-width: 230px;
+}
+.story-card .card-body {
+	padding: 0;
+}
+.story-card .card-body h4
+{
+    padding: 10px 10px 0;
+}
+.story-card .card-body p {
+    padding: 0 10px 5px;
+}
+.story-card .card-title {
+	font-weight: 600;
+}
+.story-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 10px;
+}
+.comments {
+	display: flex;
+    justify-content: flex-start;
+    color: #2196F3;
+}
+.comments p {
+	color: #2196F3;
+}
+.story-card-footer  .see-more {
+    background: #2196F3;
+    padding: 4px 7px;
+    border-radius: 50%;
+    color: #fff;
+}
+.stories-btn-wrap {
+	text-align: center;
+    margin: 50px 0 20px;
+}
+.stories-btn-wrap button {
+    box-shadow: 0px 0px 3px #888;
+    border-radius: 2px;
+}
 
 @media only screen and (max-width: 991px) {
 	.markup-collapse ul li {
