@@ -1,15 +1,14 @@
 body {
 	background: #fff;
+	overflow-x: hidden;
 }
 
 .wrapper {
-	max-width: 900px !important;
 	margin: 0 auto;
+	background: #fff;
 }
 .wrapper_cont {
-	max-width: 900px !important;
-	padding: 30px 0;
-	margin: 0 auto;
+	padding: 30px 15px;
 }
 .section-grey {
 	background: #F9F9F9;
@@ -236,6 +235,7 @@ section.services {
 } 
 
 /*Employees carousel*/
+
 .employees-carousel-inner {
 	background: #2196F3;
 }
@@ -274,9 +274,14 @@ section.services {
 
 /*info4 section*/
 
-.info4 img {
-	max-width: 230px;
+.info4 .info4-img-cont{
+	text-align: center;
 }
+.info4 img {
+	margin-bottom: 5px;
+}
+/*story section*/
+
 .story-card .card-body {
 	padding: 0;
 }
@@ -317,6 +322,121 @@ section.services {
 .stories-btn-wrap button {
     box-shadow: 0px 0px 3px #888;
     border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/*section Contact Us*/
+
+.address-text {
+	margin-top: 30px;
+	color: #333;
+	font-size: 14px;
+}
+.send-message-form {
+	margin-top: 20px;
+}
+.send-message-form input {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	border-radius: 0;
+	padding: 10px 0;
+}
+.address {
+	margin-bottom: 15px;
+}
+
+.address i {
+	color: #fff;
+    background: #2196F3;
+    padding: 8px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px #888;
+    margin-right: 10px;
+}
+.address-wrapper .address:first-child i {
+	padding: 8px 10px;
+}
+.address span {
+	font-size: 13px;
+}
+.send-message-form .btn-primary.disabled,
+.send-message-form .btn-primary:disabled {
+	border-radius: 2px;
+	font-size: 14px;
+	font-weight: 600;
+    margin-top: 35px;
+    background: #97CCF6 !important;
+    border: 1px solid #97CCF6;
+    outline: none;
+}
+.send-message-form button i {
+	margin-right: 5px;
+}
+/*Section About*/
+
+section.about {
+	background: #333;
+	border-top: 4px solid #2196F3;
+}
+section.about p {
+	font-size: 13px;
+	margin-bottom: 5px;
+	color: #fff;
+}
+.section-about-heading {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 18px;
+	position: relative;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	color: #fff;
+}
+.section-about-heading:before {
+    content: "";
+    background: #2196F3;
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    display: block;
+}
+.section-about-social-icons {
+	font-size: 30px;
+}
+.section-about-links-cont a {
+	color: #fff;
+	font-size: 13px;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+.section-about-links-cont {
+	display: flex;
+	flex-direction: column;
+}
+.about-section-gallery img {
+	max-width: 70px;
+	margin: 2px;
+}
+
+/*Footer styles*/
+
+footer {
+	background: #000;
+	
+}
+footer p {
+	padding: 20px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+}
+footer p span {
+	color: #2196F3;
 }
 
 @media only screen and (max-width: 991px) {
@@ -332,6 +452,9 @@ section.services {
 	.carousel-caption {
 		top: 40%;
 	}
+	.portfolio-gallery {
+		text-align: center;
+	}
 }
 
 @media only screen and (max-width: 950px) {
@@ -342,29 +465,98 @@ section.services {
 
 @media only screen and (max-width: 840px) {
 	.carousel-caption {
-	top: 30%;
+		top: 30%;
 	
-}
+	}
 	.carousel-caption h1 {
 		font-size: 2.5rem;
 	}
 }
+@media only screen and (max-width: 768px) {
+	section.about {
+		text-align: center;
+	}
+	.section-about-heading:before {
+	    left: 50%;
+	    transform: translateX(-50%);
+	}
+	.employees-carousel-caption img {
+    	margin: 0 0 10px;
+    	max-width: 70px;
+	}
+	.employees-carousel-caption h2 {
+	    font-size: 1.2rem;
+	    font-weight: 600;
+	    margin-bottom: 0;
+	}
+	.employees-carousel-caption h4 {
+	    font-size: 0.9rem;
+	    font-weight: 600;
+	    color: #84C5F8;
+	    margin-bottom: 0;
+	}
+	.carousel-employees .carousel-caption {
+		padding-bottom: 40px;
+	}
+	.portfolio-nav-pills {
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: 10px;
+	}
+	.portfolio-nav-pills .nav-link {
+		margin: 2px;
+	}
+	
+}
 
 @media only screen and (max-width: 672px) {
+	#myCarousel1 .carousel-caption {
+		top: 30%;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
 	.carousel-caption {
-	top: 30%;
-	
+		top: 40%;
+		transform: translateY(-80%);
 	}
 	.carousel-caption h1 {
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 	}
 	
 	.carousel-caption p {
 	    margin: 10px 0;
-	    font-size: 0.7rem;
+	    font-size: 0.9rem;
 	}
 	.carousel-caption button {
 	    padding: 3px 5px;
     	font-size: 14px;
 	}
+
 }
+
+@media only screen and (max-width: 576px) {
+	section.services {
+		text-align: center;
+	}
+	section.services .heading {
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	#myCarousel1 .carousel-caption {
+		top: 20%;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+	.carousel-caption h1 {
+		font-size: 1.2rem;
+	}
+	.carousel-caption p {
+	    margin: 10px 0;
+	    font-size: 0.7rem;
+	}
+}
+
