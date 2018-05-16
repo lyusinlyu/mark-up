@@ -250,6 +250,10 @@ section.services {
 	border-radius: 0px;
 }
 
+.member-card .card-body {
+	padding: 10px 15px 5px; 
+}
+
 .member-card .card-img-top {
 	border-radius: 0;
 }
@@ -505,9 +509,14 @@ section.about p {
 	flex-direction: column;
 }
 
-.about-section-gallery img {
-	max-width: 70px;
-	margin: 2px;
+.about-section-gallery {
+
+}
+
+.about-section-gallery .gallery-item {
+	padding: unset;
+	padding-right: 5px;
+	padding-bottom: 15px;
 }
 
 /*Footer styles*/
@@ -524,6 +533,10 @@ footer p {
 }
 
 @media only screen and (max-width: 991px) {
+	.navbar-link-active:before {
+		display: none;
+	}
+
 	.markup-collapse ul li {
 		text-align: right !important;
 	}
@@ -538,6 +551,10 @@ footer p {
 	
 	.portfolio-gallery {
 		text-align: center;
+	}
+
+	.member-card .card-body {
+		padding: 10px 8px 5px; 
 	}
 }
 @media only screen and (max-width: 768px) {
@@ -593,11 +610,6 @@ footer p {
 	.carousel-caption button {
 	    padding: 3px 5px;
     	font-size: 14px;
-	}
-
-	.about-section-gallery .row {
-		display: flex;
-		justify-content: center;
 	}
 
 	.info2 .pills-cont {
