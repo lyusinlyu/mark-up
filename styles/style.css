@@ -117,7 +117,7 @@ body {
     cursor: pointer;
 }
 
-/*Section info*/
+/*Section Info*/
 section.info {
 	padding: 30px 0;
 }
@@ -137,7 +137,7 @@ section.info {
     color: #2196F3;
 }
 
-/*Section info2*/
+/*Section Info2*/
 .pills-cont {
 	background: #fff;
     padding: 0;
@@ -201,7 +201,7 @@ section.services {
 	color: #999999;
 }
 
-/*Section portfolio*/
+/*Section Portfolio*/
 .info3-item {
 	text-align: center;
 }
@@ -243,7 +243,7 @@ section.services {
     box-shadow: 0px 0px 3px #888;
 }
 
-/*Our team section*/
+/*Section Our Team*/
 .member-card {
 	margin: 20px 0;
 	box-shadow: 0px 1px 3px #ccc;
@@ -327,7 +327,7 @@ section.services {
     height: 10px;
 }
 
-/*Info4 section*/
+/*Section Info4*/
 .info4 .info4-img-cont{
 	text-align: center;
 }
@@ -336,7 +336,7 @@ section.services {
 	margin-bottom: 5px;
 }
 
-/*Story section*/
+/*Section Story */
 .story-card .card-body {
 	padding: 0;
 }
@@ -378,6 +378,12 @@ section.services {
     width: 32px;
     height: 32px;
     text-align: center;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.story-card-footer .see-more:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
 }
 
 .story-card-footer .see-more i {
@@ -532,6 +538,8 @@ footer p {
 	text-align: center;
 }
 
+/*Media Queries*/
+
 @media only screen and (max-width: 991px) {
 	.navbar-link-active:before {
 		display: none;
@@ -633,5 +641,11 @@ footer p {
 	
 	.carousel-caption p {
 		display: none;
+	}
+
+	.info2-nav-pills .nav-link {
+		padding-left: 0.2rem;
+		padding-right: 0.2rem;
+
 	}
 }
